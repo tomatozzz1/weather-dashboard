@@ -1,22 +1,22 @@
-# 🌦️ Dashboard Climático Full Stack
+# Full Stack Weather Dashboard
 
-![Estado del Proyecto](https://img.shields.io/badge/Estado-Terminado-success)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Flask](https://img.shields.io/badge/Flask-2.x-lightgrey)
 
-Aplicación web interactiva que proporciona datos meteorológicos y de calidad del aire en tiempo real para cualquier ciudad del mundo.
+Interactive web application that provides real-time meteorological and air quality data for any city in the world.
 
-![Captura de Pantalla del Dashboard](dashboard.png)
+![Dashboard Screenshot](dashboard.png)
 
-## ✨ Características Principales
+## ✨ Key Features
 
-* **Búsqueda Global:** Localiza cualquier ciudad mediante la API de OpenStreetMap y obtiene sus coordenadas automáticamente.
-* **Clima en Tiempo Real:** Muestra temperatura, probabilidad de lluvia y pronóstico a 5 días usando la API de Open-Meteo.
-* **Calidad del Aire (AQI):** Monitoreo preciso de partículas **PM2.5** con semáforo de colores (Bueno, Moderado, Dañino).
-* **Mapa Interactivo:** Integración con **Leaflet.js** para visualizar la ubicación geográfica consultada dinámicamente.
-* **Modal Educativo:** Ventana emergente interactiva que explica qué son las partículas PM2.5 y sus riesgos para la salud.
+* **Global Search:** Locates any city using the OpenStreetMap API and automatically retrieves its coordinates.
+* **Real-Time Weather:** Displays temperature, rain probability, and a 5-day forecast using the Open-Meteo API.
+* **Air Quality (AQI):** Precise monitoring of **PM2.5** particles with a color-coded system (Good, Moderate, Unhealthy).
+* **Interactive Map:** Integration with **Leaflet.js** to dynamically visualize the geographical location.
+* **Educational Modal:** Interactive popup window explaining what PM2.5 particles are and their health risks.
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Technologies Used
 
 ### Backend
 
@@ -31,23 +31,23 @@ Aplicación web interactiva que proporciona datos meteorológicos y de calidad d
 * **Leaflet.js**
 * **FontAwesome**
 
-### APIs y Datos
+### APIs & Data
 
-* **Open-Meteo API**: Datos del clima y calidad del aire (Sin API Key).
-* **OpenStreetMap (Nominatim)**
+* **Open-Meteo API**: Weather and air quality data (No API Key required).
+* **OpenStreetMap (Nominatim)**: Geocoding.
 
-## 🚀 Instalación y Uso
+## 🚀 Installation and Usage
 
-Sigue estos pasos para correr el proyecto en tu computadora:
+Follow these steps to run the project on your computer:
 
-1. **Clonar el repositorio:**
+1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/TU_USUARIO/TU_REPOSITORIO.git
-    cd TU_REPOSITORIO
+    git clone [https://github.com/YOUR_USER/YOUR_REPO.git](https://github.com/YOUR_USER/YOUR_REPO.git)
+    cd YOUR_REPO
     ```
 
-2. **Crear y activar un entorno virtual:**
+2. **Create and activate a virtual environment:**
 
     * Windows:
 
@@ -63,31 +63,31 @@ Sigue estos pasos para correr el proyecto en tu computadora:
         source venv/bin/activate
         ```
 
-3. **Instalar dependencias:**
+3. **Install dependencies:**
 
     ```bash
     pip install flask requests
     ```
 
-4. **Ejecutar la aplicación:**
+4. **Run the application:**
 
     ```bash
     python app.py
     ```
 
-5. **Abrir en el navegador:**
+5. **Open in browser:**
 
-    La aplicación se abrirá automáticamente o puedes visitar: `http://127.0.0.1:5000`
+    The application should open automatically, or you can visit: `http://127.0.0.1:5000`
 
-## 📂 Estructura del Proyecto
+## 📂 Project Structure
 
 ```text
 📂 weather-app
  ┣ 📂 static
- ┃ ┣ 📜 style.css       
- ┃ ┗ 📜 script.js       
+ ┃ ┣ 📜 style.css       # Custom styles
+ ┃ ┗ 📜 script.js       # Map logic and data updates
  ┣ 📂 templates
- ┃ ┗ 📜 index.html     
- ┣ 📜 app.py            
- ┣ 📜 weather_service.py 
+ ┃ ┗ 📜 index.html      # HTML structure and Modals
+ ┣ 📜 app.py            # Flask Server (Routes)
+ ┣ 📜 weather_service.py # API connection logic
  ┗ 📜 README.md
