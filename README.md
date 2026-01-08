@@ -1,4 +1,4 @@
-# Full Stack Weather Dashboard
+# Weather Dashboard
 
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
