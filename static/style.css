@@ -1,0 +1,98 @@
+:root {
+    --main-bg-gradient: linear-gradient(135deg, #f5f3ff 0%, #e0e7ff 100%);
+    --card-bg-white: #ffffff;
+    --card-radius: 30px;
+    --card-shadow: 0 10px 30px -5px rgba(62, 57, 107, 0.06);
+    /* Textos */
+    --text-dark-title: #2d3748;
+    --text-light-body: #718096;
+    /* Colores de Estado */
+    --gauge-color: #f59e0b; 
+    --primary-blue: #3b82f6;
+}
+
+body {
+    background: var(--main-bg-gradient) !important;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-light-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-dark-title);
+    font-weight: 700;
+}
+
+.card {
+    background-color: var(--card-bg-white);
+    border-radius: var(--card-radius) !important;
+    border: none !important;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 20px 40px -5px rgba(62, 57, 107, 0.1);
+}
+
+.card-body {
+    padding: 1.8rem;
+}
+
+#forecast-container i {
+    filter: drop-shadow(0 3px 2px rgba(0,0,0,0.1));
+}
+
+#map {
+    border-radius: 20px;
+    width: 100%;
+    min-height: 250px; 
+    flex-grow: 1;      
+    z-index: 1;
+}
+
+.special-card-aire {
+    min-height: 350px; 
+}
+
+.gauge-wrapper {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.gauge-circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 12px solid var(--gauge-color); 
+    opacity: 0.4; 
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.15);
+}
+
+.gauge-number {
+    position: relative;
+    z-index: 2;
+    font-size: 4rem; 
+    font-weight: 800;
+    color: var(--text-dark-title);
+    line-height: 1;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
