@@ -15,7 +15,6 @@ Aplicación web interactiva que proporciona datos meteorológicos y de calidad d
 * **Calidad del Aire (AQI):** Monitoreo preciso de partículas **PM2.5** con semáforo de colores (Bueno, Moderado, Dañino).
 * **Mapa Interactivo:** Integración con **Leaflet.js** para visualizar la ubicación geográfica consultada dinámicamente.
 * **Modal Educativo:** Ventana emergente interactiva que explica qué son las partículas PM2.5 y sus riesgos para la salud.
-* **Diseño Moderno:** Interfaz de usuario (UI) responsiva basada en **Bootstrap 5** y CSS personalizado estilo "Glassmorphism".
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -85,10 +84,10 @@ Sigue estos pasos para correr el proyecto en tu computadora:
 ```text
 📂 weather-app
  ┣ 📂 static
- ┃ ┣ 📜 style.css       # Estilos personalizados (Figma Style)
- ┃ ┗ 📜 script.js       # Lógica del mapa y actualización de datos
+ ┃ ┣ 📜 style.css       
+ ┃ ┗ 📜 script.js       
  ┣ 📂 templates
- ┃ ┗ 📜 index.html      # Estructura HTML y Modales
- ┣ 📜 app.py            # Servidor Flask (Rutas)
- ┣ 📜 weather_service.py # Lógica de conexión con APIs
+ ┃ ┗ 📜 index.html     
+ ┣ 📜 app.py            
+ ┣ 📜 weather_service.py 
  ┗ 📜 README.md
