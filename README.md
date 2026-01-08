@@ -84,10 +84,10 @@ Follow these steps to run the project on your computer:
 ```text
 📂 weather-app
  ┣ 📂 static
- ┃ ┣ 📜 style.css       # Custom styles
- ┃ ┗ 📜 script.js       # Map logic and data updates
+ ┃ ┣ 📜 style.css       
+ ┃ ┗ 📜 script.js       
  ┣ 📂 templates
- ┃ ┗ 📜 index.html      # HTML structure and Modals
- ┣ 📜 app.py            # Flask Server (Routes)
- ┣ 📜 weather_service.py # API connection logic
+ ┃ ┗ 📜 index.html      
+ ┣ 📜 app.py            
+ ┣ 📜 weather_service.py 
  ┗ 📜 README.md
