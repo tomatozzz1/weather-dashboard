@@ -8,7 +8,7 @@ Interactive web application that provides real-time meteorological and air quali
 
 ![Dashboard Screenshot](dashboard.png)
 
-## ✨ Key Features
+## Key Features
 
 * **Global Search:** Locates any city using the OpenStreetMap API and automatically retrieves its coordinates.
 * **Real-Time Weather:** Displays temperature, rain probability, and a 5-day forecast using the Open-Meteo API.
@@ -16,7 +16,7 @@ Interactive web application that provides real-time meteorological and air quali
 * **Interactive Map:** Integration with **Leaflet.js** to dynamically visualize the geographical location.
 * **Educational Modal:** Interactive popup window explaining what PM2.5 particles are and their health risks.
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 ### Backend
 
@@ -36,7 +36,7 @@ Interactive web application that provides real-time meteorological and air quali
 * **Open-Meteo API**: Weather and air quality data (No API Key required).
 * **OpenStreetMap (Nominatim)**: Geocoding.
 
-## 🚀 Installation and Usage
+## Installation and Usage
 
 Follow these steps to run the project on your computer:
 
@@ -79,7 +79,7 @@ Follow these steps to run the project on your computer:
 
     The application should open automatically, or you can visit: `http://127.0.0.1:5000`
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 📂 weather-app
